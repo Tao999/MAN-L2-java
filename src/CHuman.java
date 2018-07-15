@@ -1,5 +1,5 @@
 public class CHuman {
-	static private String tableName[] = { "Martin", "Bernard", "Thomas", "Petit", "Robert", "Richard", "Durand",
+	private static final String tableName[] = { "Martin", "Bernard", "Thomas", "Petit", "Robert", "Richard", "Durand",
 			"Dubois", "Moreau", "Laurent", "Simon", "Michel", "Lefebvre", "Leroy", "Roux", "David", "Bertrand", "Morel",
 			"Fournier", "Girard", "Bonnet", "Dupont", "Lambert", "Fontaine", "Rousseau", "Vincent", "Muller", "Lefevre",
 			"Faure", "Andre", "Mercier", "Blanc", "Guerin", "Boyer", "Garnier", "Chevalier", "Francois", "Legrand",
@@ -20,7 +20,7 @@ public class CHuman {
 		m_firstName = tableName[(int) (Math.random() * tableName.length)];
 		m_lastName = tableName[(int) (Math.random() * tableName.length)];
 		m_age = (int) (Math.random() * 90);
-		m_size = (float) ((int) (Math.random() * 10)) / 10 + 1;
+		m_size = (float) ((Math.floor((Math.random() * 100))) / 100 + 1);
 		m_adress = (int) (Math.random() * 1000) + " rue de la paix";
 	}
 
